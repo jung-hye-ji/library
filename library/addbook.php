@@ -222,7 +222,7 @@
 				<input type="text" name="writer" value="<?=$row['writer']?>" hidden>
 				<input type="text" name="publisher" value="<?=$row['publisher']?>" hidden>
 				<button type="submit" value="heart" class="borrow">찜하기</button>
-			
+			 </form>
                 <br><br><form action="addbookproc.php" method="get">
 				<input type="text" name="bookname" value="<?=$bookname?>" hidden>
 				<input type="text" name="writer" value="<?=$writer?>" hidden>
