@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJ 도서관 : 찜한 도서</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&family=Song+Myung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color:white;
+            height: 100vh;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        section {
+            min-height: 100vh;
+            width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            font-size: 3rem;
+            margin: 2rem 0rem;
+        }
+        ul {
+            list-style: none;
+            margin: 10px;
+            padding: 0;
+            text-align: right;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #plus-menu > li {
+            display: inline;
+            margin:10px;
+        }
+        #main-menu > li {
+            display: inline;
+            list-style: none;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+        #serchbar{
+            padding-left: 200px;
+          
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+        #plus-menu > li > a:hover {
+            text-decoration: underline;
+        }
+    
+        .wrap{
+            width: 30%;
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+        .member {
+            text-align: center;
+            padding-top: 100px;
+        }
+        .member > h2 {
+            text-align: center;
+        }
+
+        img {
+            width: 70px;
+            vertical-align: middle;
+        }
+        footer {
+                display: block;
+                height: 200px;
+                margin-top: 200px;
+                bottom: 0;
+                background-color: rgb(148, 164, 173);
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+            <ul id="plus-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원 가입</a></li>
+            </ul>
+            <table>
+            <tr><td><h1 style="background: linear-gradient(to top, #dcc2e7 50%, transparent 50%);"><a href="main1.html">DJ 도서관</a></h1></td>
+                <td id="serchbar"><div>
+                    <form action="search.php" method="POST">
+                    <input type="text" style="height: 37px; width: 400px;"  placeholder="제목, 저자 검색" name="search" >
+                    <button type="submit"><i class="material-icons" style="font-size:20px" value="search">search</i></button>
+                </form>
+            </div></td></tr>
+            </table>
+                <div class="dropmenu">
+                    <ul id="main-menu">
+                        <a href="notice.php" class="w3-bar-item w3-button w3-xlarge">공지사항</a>
+                        <a href="showbook.php" class="w3-bar-item w3-button w3-xlarge">소장도서</a>
+                        <a href="list.php" class="w3-bar-item w3-button w3-xlarge">이야기 마당</a>
+                        <a href="question.php" class="w3-bar-item w3-button w3-xlarge">자주 묻는 질문</a>
+                        <div class="w3-dropdown-hover">
+                            <button class="w3-button w3-xlarge">마이페이지</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                              <a href="change.php" class="w3-bar-item w3-button">내 정보수정</a>
+                              <a href="addbook.php" class="w3-bar-item w3-button w3-purple">찜한 도서</a>
+                              <a href="showcart.php" class="w3-bar-item w3-button">대출 도서</a>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+            </header>
+<!-------------메뉴바----->
+            <div class="member">
+                <img src="image/profile-user.png"><h2>uid 님의 찜한 도서 목록</h2>
+            </div>
+        </div>
+        <footer class="footer">The Footer</footer>
+</body>
+</html>
