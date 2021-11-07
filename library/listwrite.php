@@ -179,7 +179,7 @@
                             <button class="w3-button w3-xlarge">마이페이지</button>
                             <div class="w3-dropdown-content w3-bar-block w3-border">
                                 <a href="change.php" class="w3-bar-item w3-button">내 정보수정</a>
-                                <a href="addcart.php" class="w3-bar-item w3-button">찜한 도서</a>
+                                <a href="likecart.php" class="w3-bar-item w3-button">찜한 도서</a>
                                 <a href="showcart.php" class="w3-bar-item w3-button">대출 도서</a>
                                 <?php
                 $query2 = "select * from member";
