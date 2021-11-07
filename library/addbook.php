@@ -211,7 +211,7 @@
                 </div>
 <!--------- 상단메뉴-------------->
 <div class = "content">		
-			<h1 class="title">Like Book</h1>
+			<h1 class="title">The Book</h1>
 			<form action="addbooktolike.php" method="get">
 				<h2><?php echo $bookname ?></h2>
 				<h2><?php echo $writer ?></h2>
