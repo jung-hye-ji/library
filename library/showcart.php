@@ -209,7 +209,7 @@
 							<td><?=$row['writer']?></td>
 							<td><?=$row['publisher']?></td>
 							<td><?=$row['bdate']?></td>
-          					 <td><?=$row['rdate']?><p>
+          					 <td><?=$row['rdate']?>
 							    </td>
 
 						</tr>
